@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicZDem.MdSpa.WebUI", "MicZDem.MdSpa.WebUI\MicZDem.MdSpa.WebUI.csproj", "{0CCDD1B4-E41E-4560-AC0D-13B924AB6702}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicZDem.MdSpa.WebUI.Unit.Tests", "MicZDem.MdSpa.WebUI.Unit.Tests\MicZDem.MdSpa.WebUI.Unit.Tests.csproj", "{FBA203A0-C8FB-447C-A13E-775232AFDE76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CCDD1B4-E41E-4560-AC0D-13B924AB6702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CCDD1B4-E41E-4560-AC0D-13B924AB6702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CCDD1B4-E41E-4560-AC0D-13B924AB6702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CCDD1B4-E41E-4560-AC0D-13B924AB6702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA203A0-C8FB-447C-A13E-775232AFDE76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA203A0-C8FB-447C-A13E-775232AFDE76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA203A0-C8FB-447C-A13E-775232AFDE76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA203A0-C8FB-447C-A13E-775232AFDE76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
