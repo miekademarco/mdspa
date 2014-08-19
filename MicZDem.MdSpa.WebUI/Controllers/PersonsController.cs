@@ -35,6 +35,11 @@ namespace MicZDem.MdSpa.WebUI.Controllers
         // POST api/values
         public Person Post(Person value)
         {
+            if (value.Age <= 0)
+            {
+                throw new ArgumentException();
+            }
+            
             var ret = _sqlDbContext.Persons.Add(value);
             _sqlDbContext.SaveChanges();
             return ret;

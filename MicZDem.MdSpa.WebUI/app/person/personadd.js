@@ -6,6 +6,7 @@
     function personadd(common, datacontext) {
         var getLogFn = common.logger.getLogFn;
         var log = getLogFn(controllerId);
+        var logErr = getLogFn(controllerId,'logError');
 
         var vm = this;
         vm.title = 'Add Person';
@@ -30,16 +31,16 @@
             var newPerson = new datacontext.personApi({
                 Id: null,
                 FirstName: vm.firstName,
-                LastName: vm.lastName,
+                LastName: vm.lastName, 
                 Age: vm.age,
                 Location: vm.location
             });
             newPerson.$save().then(function (data) {
-                log('New Person Created with Id:' + data.Id);
+                log(data.FirstName + ' ' + data.lastName + ' Created with Id: ' + data.Id);
                 initPerson();
                 console.dir(data);
             }, function (error) {
-                log('An Error Occured');
+                logErr('An Error Occured');
                 console.dir(error);
             });
 

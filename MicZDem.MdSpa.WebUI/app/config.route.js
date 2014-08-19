@@ -46,7 +46,7 @@
                     templateUrl: 'app/person/personadd.html',
                     settings: {
                         nav: 2,
-                        content: '<i class="fa fa-lock"></i> Add Person'
+                        content: '<i class="fa fa-child"></i> Add Person'
                     }
                 }
             }
