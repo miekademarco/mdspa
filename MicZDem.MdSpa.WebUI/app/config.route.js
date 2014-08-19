@@ -39,6 +39,16 @@
                         content: '<i class="fa fa-lock"></i> Admin'
                     }
                 }
+            }, {
+                url: '/personadd',
+                config: {
+                    title: 'personadd',
+                    templateUrl: 'app/person/personadd.html',
+                    settings: {
+                        nav: 2,
+                        content: '<i class="fa fa-lock"></i> Add Person'
+                    }
+                }
             }
         ];
     }

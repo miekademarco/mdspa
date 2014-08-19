@@ -10,16 +10,19 @@
 
         var service = {
             getPeople: getPeople,
-            getMessageCount: getMessageCount
+            getMessageCount: getMessageCount,
+            personApi: personApi
         };
 
         return service;
-
-        function getMessageCount() { return $q.when(72); }
+        
+        function getMessageCount() { return $q.when(33); }
 
         function getPeople() {
             var people = personApi.query();
             return $q.when(people);
         }
-    }
+}
+
+
 })();

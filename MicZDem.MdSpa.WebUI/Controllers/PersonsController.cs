@@ -35,10 +35,10 @@ namespace MicZDem.MdSpa.WebUI.Controllers
         // POST api/values
         public Person Post(Person value)
         {
-            //var ret = _sqlDbContext.Persons.Add(value);
-            //_sqlDbContext.SaveChanges();
-            //return ret;
-            throw new NotImplementedException();
+            var ret = _sqlDbContext.Persons.Add(value);
+            _sqlDbContext.SaveChanges();
+            return ret;
+            //throw new NotImplementedException();
         }
 
         // PUT api/values/5
