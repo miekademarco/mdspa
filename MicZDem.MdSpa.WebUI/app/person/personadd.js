@@ -39,7 +39,7 @@
                 initPerson();
                 console.dir(data);
             }, function (error) {
-                logError('An Error Occured');
+                log('An Error Occured');
                 console.dir(error);
             });
 
