@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -49,21 +50,27 @@ namespace MicZDem.MdSpa.WebUI.Controllers
         // PUT api/values/5
         public Person Put(int id, Person value)
         {
-            //var toUpdate = _sqlDbContext.Persons.Find(id);
-            //toUpdate = value;
-            //_sqlDbContext.SaveChanges();
-            //return toUpdate;
-            throw new NotImplementedException();
+            if (value.Age <= 0)
+            {
+                throw new ArgumentException();
+            }
+            var toUpdate = _sqlDbContext.Persons.Find(id);
+            toUpdate.FirstName = value.FirstName;
+            toUpdate.LastName = value.LastName;
+            toUpdate.Age = value.Age;
+            toUpdate.Location = value.Location;
+            _sqlDbContext.Entry(toUpdate).State = EntityState.Modified; 
+            _sqlDbContext.SaveChanges();
+            return toUpdate;
         }
 
         // DELETE api/values/5
         public Person Delete(int id)
         {
-            //var toDelete = _sqlDbContext.Persons.Find(id);
-            //var ret = _sqlDbContext.Persons.Remove(toDelete);
-            //_sqlDbContext.SaveChanges();
-            //return ret;
-            throw new NotImplementedException();
+            var toDelete = _sqlDbContext.Persons.Find(id);
+            var ret = _sqlDbContext.Persons.Remove(toDelete);
+            _sqlDbContext.SaveChanges();
+            return ret;
         }
     }
 }

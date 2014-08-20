@@ -37,8 +37,8 @@
             });
             newPerson.$save().then(function (data) {
                 log(data.FirstName + ' ' + data.LastName + ' Created with Id: ' + data.Id);
-                initPerson();
                 console.dir(data);
+                $location.path('/dashboard');
             }, function (error) {
                 logErr('An Error Occured');
                 console.dir(error);

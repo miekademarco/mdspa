@@ -6,7 +6,11 @@
 
     function datacontext(common, $resource) {
         var $q = common.$q;
-        var personApi = $resource('/api/Persons/:Id');
+        var personApi = $resource('/api/Persons/:Id', { Id: '@Id' }, {
+            update: {
+                method: 'PUT'
+            }
+        });
 
         var service = {
             getPeople: getPeople,
