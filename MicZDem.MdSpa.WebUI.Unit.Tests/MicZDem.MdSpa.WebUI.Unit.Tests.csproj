@@ -91,6 +91,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\PersonsControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
     <Compile Include="Controllers\ValuesControllerTest.cs" />
@@ -102,6 +103,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MicZDem.MdSpa.Domain\MicZDem.MdSpa.Domain.csproj">
+      <Project>{a26f3d47-4a72-4b6e-844b-4d41c99f4ea9}</Project>
+      <Name>MicZDem.MdSpa.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MicZDem.MdSpa.WebUI\MicZDem.MdSpa.WebUI.csproj">
       <Project>{0CCDD1B4-E41E-4560-AC0D-13B924AB6702}</Project>
       <Name>MicZDem.MdSpa.WebUI</Name>

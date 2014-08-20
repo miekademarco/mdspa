@@ -36,7 +36,7 @@
                 Location: vm.location
             });
             newPerson.$save().then(function (data) {
-                log(data.FirstName + ' ' + data.lastName + ' Created with Id: ' + data.Id);
+                log(data.FirstName + ' ' + data.LastName + ' Created with Id: ' + data.Id);
                 initPerson();
                 console.dir(data);
             }, function (error) {
