@@ -45,7 +45,7 @@
                     title: 'personadd',
                     templateUrl: 'app/person/personadd.html',
                     settings: {
-                        nav: 2,
+                        nav: 3,
                         content: '<i class="fa fa-child"></i> Add Person'
                     }
                 }
@@ -55,8 +55,8 @@
                     title: 'personedit',
                     templateUrl: 'app/person/personedit.html',
                     settings: {
-                        nav: 1,
-                        content: '<i class="fa fa-child"></i> Edit Person'
+                        nav: 4,
+                        content: '<i class="fa fa-edit"></i> Edit Person'
                     }
                 }
             }
