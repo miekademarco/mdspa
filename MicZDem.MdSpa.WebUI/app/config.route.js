@@ -49,6 +49,16 @@
                         content: '<i class="fa fa-child"></i> Add Person'
                     }
                 }
+            }, {
+                url: '/personedit/:personId',
+                config: {
+                    title: 'personedit',
+                    templateUrl: 'app/person/personedit.html',
+                    settings: {
+                        nav: 1,
+                        content: '<i class="fa fa-child"></i> Edit Person'
+                    }
+                }
             }
         ];
     }

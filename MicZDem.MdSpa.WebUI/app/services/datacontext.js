@@ -11,7 +11,8 @@
         var service = {
             getPeople: getPeople,
             getMessageCount: getMessageCount,
-            personApi: personApi
+            personApi: personApi,
+            getPersonDetails: getPersonDetails
         };
 
         return service;
@@ -21,6 +22,12 @@
         function getPeople() {
             var people = personApi.query();
             return $q.when(people);
+        }
+
+        function getPersonDetails(id) {
+
+            var person = personApi.get({ id: id });
+            return $q.when(person);
         }
 }
 

@@ -1,9 +1,9 @@
 ﻿(function () {
     'use strict';
     var controllerId = 'personadd';
-    angular.module('app').controller(controllerId, ['common', 'datacontext', personadd]);
+    angular.module('app').controller(controllerId, ['common', 'datacontext', '$location', personadd]);
 
-    function personadd(common, datacontext) {
+    function personadd(common, datacontext, $location) {
         var getLogFn = common.logger.getLogFn;
         var log = getLogFn(controllerId);
         var logErr = getLogFn(controllerId,'logError');

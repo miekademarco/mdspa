@@ -1,0 +1,38 @@
+﻿<section class="mainbar" data-ng-controller="personedit as vm">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="widget wviolet">
+                    <div data-cc-widget-header title="{{vm.title}}"></div>
+                    <div class="widget-content user">
+                        <h3>Details</h3>
+                    </div>
+                    <div class="widget-foot">
+                        <div class="clearfix">
+                            <label for="firstName" class="person-label">First Name</label>
+                            <input id="firstName" ng-model="vm.person.FirstName" type="text" />
+                        </div>
+                        <div>
+                            <label for="lastName" class="person-label">Last Name</label>
+                            <input id="lastName" ng-model="vm.person.LastName" type="text" />
+                        </div>
+                        <div>
+                            <label for="age" class="person-label">Age</label>
+                            <input id="age" ng-model="vm.person.Age" type="text" />
+                        </div>
+                        <div>
+                            <label for="location" class="person-label">Location</label>
+                            <input id="location" ng-model="vm.person.Location" type="text" />
+                        </div>
+                        <div>
+                            <button ng-click="vm.savePerson()">Save Person</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a ng-href="/#/dashboard">&lt; Back to Dashboard</a>
+            </div>
+        </div>
+    </section>
+</section>

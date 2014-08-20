@@ -197,6 +197,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\person\personedit.html" />
+    <Content Include="app\person\personedit.js" />
     <Content Include="app\person\personadd.html" />
     <Content Include="app\person\personadd.js" />
     <Content Include="app\admin\admin.html" />
