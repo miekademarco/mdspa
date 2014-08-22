@@ -46,7 +46,7 @@
                     templateUrl: 'app/person/personadd.html',
                     settings: {
                         nav: 3,
-                        content: '<i class="fa fa-child"></i> Add Person'
+                        content: '<i class="fa fa-pied-piper-alt"></i> Add Person'
                     }
                 }
             }, {
