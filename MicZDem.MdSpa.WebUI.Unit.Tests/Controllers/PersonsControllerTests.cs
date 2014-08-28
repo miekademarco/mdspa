@@ -12,12 +12,12 @@ namespace MicZDem.MdSpa.WebUI.Controllers.Tests
     public class PersonsControllerTests
     {
         [TestMethod()]
-        public void PostTest()
+        public void Post_PersonWithNegativeAge_Test()
         {
             // Arrange
             var controller = new PersonsController();
 
-            // Act
+            // Create a person with a negative age
             var p = new Person()
             {
                 FirstName = "Mic",
