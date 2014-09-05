@@ -31,6 +31,17 @@
             });
         }
 
+        vm.deletePerson = function() {
+            vm.person.$delete().then(function(data) {
+                log(vm.person.FirstName + ' ' + vm.person.LastName + ' Deleted');
+                $location.path('/dashboard');
+            }, function(error) {
+                logErr('An Error Occured');
+                console.dir(error);
+            });
+        }
+
+
         vm.savePerson = function () {
             vm.person.$update().then(function (data) {
                 log(vm.person.FirstName + ' ' + vm.person.LastName + ' Updated');
@@ -39,22 +50,6 @@
                 logErr('An Error Occured');
                 console.dir(error);
             });
-
-            //var newPerson = new datacontext.personApi({
-            //    Id: null,
-            //    FirstName: vm.firstName,
-            //    LastName: vm.lastName, 
-            //    Age: vm.age,
-            //    Location: vm.location
-            //});
-            //newPerson.$save().then(function (data) {
-            //    log(data.FirstName + ' ' + data.LastName + ' Created with Id: ' + data.Id);
-            //    initPerson();
-            //    console.dir(data);
-            //}, function (error) {
-            //    logErr('An Error Occured');
-            //    console.dir(error);
-            //});
 
         }
 
