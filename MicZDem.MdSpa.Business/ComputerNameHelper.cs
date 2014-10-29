@@ -14,6 +14,7 @@ namespace MicZDem.MdSpa.Business
         {
             IPAddress myIP = IPAddress.Parse(ip);
             IPHostEntry GetIPHost = Dns.GetHostEntry(myIP);
+            return GetIPHost.HostName;
             List<string> compName = GetIPHost.HostName.Split('.').ToList();
             return compName.First();
         }
