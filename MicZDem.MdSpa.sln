@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicZDem.MdSpa.SqlData", "Mi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicZDem.MdSpa.Domain", "MicZDem.MdSpa.Domain\MicZDem.MdSpa.Domain.csproj", "{A26F3D47-4A72-4B6E-844B-4D41C99F4EA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicZDem.MdSpa.Business", "MicZDem.MdSpa.Business\MicZDem.MdSpa.Business.csproj", "{59BF9E31-5E58-4D2A-95F5-D8E891E86C01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A26F3D47-4A72-4B6E-844B-4D41C99F4EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A26F3D47-4A72-4B6E-844B-4D41C99F4EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A26F3D47-4A72-4B6E-844B-4D41C99F4EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59BF9E31-5E58-4D2A-95F5-D8E891E86C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59BF9E31-5E58-4D2A-95F5-D8E891E86C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59BF9E31-5E58-4D2A-95F5-D8E891E86C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59BF9E31-5E58-4D2A-95F5-D8E891E86C01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

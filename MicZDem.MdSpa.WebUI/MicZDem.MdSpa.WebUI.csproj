@@ -326,6 +326,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MicZDem.MdSpa.Business\MicZDem.MdSpa.Business.csproj">
+      <Project>{59BF9E31-5E58-4D2A-95F5-D8E891E86C01}</Project>
+      <Name>MicZDem.MdSpa.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MicZDem.MdSpa.Domain\MicZDem.MdSpa.Domain.csproj">
       <Project>{a26f3d47-4a72-4b6e-844b-4d41c99f4ea9}</Project>
       <Name>MicZDem.MdSpa.Domain</Name>
