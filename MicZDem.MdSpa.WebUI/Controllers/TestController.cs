@@ -25,7 +25,13 @@ namespace MicZDem.MdSpa.WebUI.Controllers
             userInfoStringBuilder.Append(" / ");
             userInfoStringBuilder.Append("UserHostName: ");
             userInfoStringBuilder.Append(HttpContext.Request.UserHostName);
-            //userInfoStringBuilder.Append(" / ");
+            userInfoStringBuilder.Append(" / ");
+            userInfoStringBuilder.Append("RemoteHost: ");
+            userInfoStringBuilder.Append(Request.ServerVariables["REMOTE_HOST"]);
+            userInfoStringBuilder.Append(" / ");
+            userInfoStringBuilder.Append("RemoteAddr: ");
+            userInfoStringBuilder.Append(Request.ServerVariables["REMOTE_ADDR"]);
+            userInfoStringBuilder.Append(" / ");
 
             model.TestUserInfo = userInfoStringBuilder.ToString();
             return View(model);
