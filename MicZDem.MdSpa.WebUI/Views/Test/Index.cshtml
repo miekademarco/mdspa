@@ -1,0 +1,23 @@
+﻿@model MicZDem.MdSpa.WebUI.ViewModels.TestViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <h4>TestViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TestUserInfo)
+        </dt>
+
+        <dd>
+            @Html.DisplayTextFor(model => model.TestUserInfo)
+        </dd>
+
+    </dl>
+</div>
+
